@@ -43,6 +43,10 @@ export default function Home() {
                 SHOWS
                 <span className="absolute -bottom-1 left-0 w-0 h-[0.5px] bg-white group-hover:w-full transition-all duration-300"></span>
               </a>
+              <a href="/emma" className="text-[11px] tracking-[0.2em] text-purple-400/70 hover:text-purple-400 transition-all duration-300 relative group">
+                EMMA AI
+                <span className="absolute -bottom-1 left-0 w-0 h-[0.5px] bg-purple-400 group-hover:w-full transition-all duration-300"></span>
+              </a>
               <a href="#contact" className="text-[11px] tracking-[0.2em] text-white/70 hover:text-white transition-all duration-300 relative group">
                 CONTACT
                 <span className="absolute -bottom-1 left-0 w-0 h-[0.5px] bg-white group-hover:w-full transition-all duration-300"></span>
@@ -114,7 +118,12 @@ export default function Home() {
             <p className={`text-[16px] md:text-[18px] text-white/50 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-700 ${
               isVisible ? 'translate-y-0' : 'translate-y-full'
             }`}>
-              Crafting immersive sonic landscapes at the intersection of technology and emotion
+              Crafting immersive sonic landscapes with EMMA AI technology
+            </p>
+            <p className={`text-[14px] text-purple-400/60 mt-3 transition-all duration-1000 delay-800 ${
+              isVisible ? 'opacity-100' : 'opacity-0'
+            }`}>
+              Powered by EMMA - Electronic Music & Media Assistant
             </p>
           </div>
 
@@ -194,6 +203,9 @@ export default function Home() {
                 <h3 className="text-[48px] font-thin mb-2">Midnight Dreams</h3>
                 <p className="text-[14px] text-white/40 tracking-[0.2em]">RELEASED NOVEMBER 2024</p>
                 <p className="text-[14px] text-white/40 tracking-[0.2em]">12 TRACKS · 57 MINUTES</p>
+                <p className="text-[12px] text-white/30 tracking-[0.2em] mt-2">
+                  PRODUCED WITH <span className="text-purple-400/60">EMMA AI</span>
+                </p>
               </div>
 
               {/* Track list with hover effects */}
@@ -253,6 +265,20 @@ export default function Home() {
               Drawing from years of experience in music production and sound design,
               Folino crafts immersive experiences that resonate with audiences worldwide.
             </p>
+
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-[16px] text-white/50 mb-2">
+                Production Partner
+              </p>
+              <p className="text-[20px] font-light">
+                <a href="/emma" className="text-white/70 hover:text-white transition-colors bg-gradient-to-r from-purple-500/20 to-blue-500/20 px-4 py-2 rounded-full inline-block">
+                  EMMA AI Studio
+                </a>
+              </p>
+              <p className="text-[12px] text-white/30 mt-2">
+                AI-powered music production technology
+              </p>
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-16">
@@ -398,7 +424,7 @@ export default function Home() {
       <footer className="py-12 px-8 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[10px] tracking-[0.2em] text-white/20">
-            © 2024 FOLINO MUSIC
+            © 2024 FOLINO MUSIC · POWERED BY <a href="/emma" className="text-purple-400/40 hover:text-purple-400/60 transition-colors">EMMA AI</a>
           </p>
           <div className="flex items-center gap-8">
             <a href="#" className="text-[10px] tracking-[0.2em] text-white/20 hover:text-white/40 transition-colors">
