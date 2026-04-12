@@ -233,85 +233,50 @@ export default function Home() {
             <p className="text-gray-400">Join me live around the world</p>
           </div>
 
-          {/* Tabs */}
-          <div className="flex justify-center space-x-2 mb-12">
-            {['all', 'north-america', 'europe', 'asia'].map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 ${
-                  activeTab === tab
-                    ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
-                    : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
-                }`}
-              >
-                {tab.replace('-', ' ')}
-              </button>
-            ))}
-          </div>
+          {/* Coming Soon Message */}
+          <div className="text-center py-20">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full text-sm font-semibold text-blue-400 mb-6">
+              2025 WORLD TOUR
+            </div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
+              TOUR DATES COMING SOON
+            </h3>
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+              Get ready for an immersive live experience with LED mask performances and exclusive EMMA AI-powered visuals
+            </p>
 
-          {/* Tour Dates */}
-          <div className="space-y-4">
-            {[
-              { date: 'DEC 31', day: 'TUE', year: '2024', city: 'Miami, FL', venue: 'Space Miami', region: 'north-america', status: 'on-sale', soldOut: false },
-              { date: 'JAN 18', day: 'SAT', year: '2025', city: 'Los Angeles, CA', venue: 'Exchange LA', region: 'north-america', status: 'on-sale', soldOut: false },
-              { date: 'FEB 14', day: 'FRI', year: '2025', city: 'New York, NY', venue: 'Brooklyn Mirage', region: 'north-america', status: 'on-sale', soldOut: true },
-              { date: 'MAR 08', day: 'SAT', year: '2025', city: 'London, UK', venue: 'Printworks', region: 'europe', status: 'coming-soon', soldOut: false },
-              { date: 'MAR 22', day: 'SAT', year: '2025', city: 'Berlin, DE', venue: 'Sisyphos', region: 'europe', status: 'coming-soon', soldOut: false },
-              { date: 'APR 05', day: 'SAT', year: '2025', city: 'Amsterdam, NL', venue: 'De School', region: 'europe', status: 'coming-soon', soldOut: false },
-              { date: 'MAY 10', day: 'SAT', year: '2025', city: 'Tokyo, JP', venue: 'Contact Tokyo', region: 'asia', status: 'coming-soon', soldOut: false },
-              { date: 'MAY 24', day: 'SAT', year: '2025', city: 'Seoul, KR', venue: 'Cakeshop', region: 'asia', status: 'coming-soon', soldOut: false },
-            ]
-            .filter(show => activeTab === 'all' || show.region === activeTab)
-            .map((show, index) => (
-              <div
-                key={index}
-                className="group relative bg-gradient-to-r from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div className="flex items-start space-x-6 mb-4 md:mb-0">
-                    <div className="text-center min-w-[60px]">
-                      <div className="text-3xl font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
-                        {show.date.split(' ')[0]}
-                      </div>
-                      <div className="text-sm text-blue-400">{show.date.split(' ')[1]}</div>
-                      <div className="text-xs text-gray-500">{show.day}</div>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-semibold mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
-                        {show.city}
-                      </h3>
-                      <p className="text-gray-400">{show.venue}</p>
-                      <p className="text-xs text-gray-500 mt-1">{show.year}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    {show.soldOut ? (
-                      <span className="px-4 py-2 bg-red-500/20 text-red-400 rounded-full text-sm font-semibold">
-                        SOLD OUT
-                      </span>
-                    ) : show.status === 'on-sale' ? (
-                      <>
-                        <span className="text-green-400 text-sm font-semibold animate-pulse">● ON SALE</span>
-                        <a
-                          href="#"
-                          className="px-6 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105"
-                        >
-                          GET TICKETS
-                        </a>
-                      </>
-                    ) : (
-                      <>
-                        <span className="text-yellow-400 text-sm">COMING SOON</span>
-                        <button className="px-6 py-2.5 border border-gray-600 rounded-full text-gray-400 cursor-not-allowed">
-                          NOTIFY ME
-                        </button>
-                      </>
-                    )}
-                  </div>
-                </div>
+            {/* Email Signup */}
+            <div className="max-w-md mx-auto">
+              <p className="text-gray-500 mb-4">Be the first to know when tour dates are announced</p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-6 py-3 bg-white/5 border border-white/10 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-blue-500/50 transition-colors"
+                />
+                <button className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105">
+                  NOTIFY ME
+                </button>
               </div>
-            ))}
+            </div>
+
+            {/* Social Links */}
+            <div className="mt-12">
+              <p className="text-sm text-gray-500 mb-4">Follow for tour announcements</p>
+              <div className="flex justify-center gap-4">
+                <a href="https://instagram.com/folinomusic" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  Instagram
+                </a>
+                <span className="text-gray-600">•</span>
+                <a href="https://facebook.com/folinomusic" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  Facebook
+                </a>
+                <span className="text-gray-600">•</span>
+                <a href="https://twitter.com/folinomusic" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  Twitter
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
