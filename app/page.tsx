@@ -362,13 +362,6 @@ export default function Home() {
                 cover: 'https://i.scdn.co/image/ab67616d000048513f76bb0c46f184b1ed0263ab',
                 spotifyUrl: 'https://open.spotify.com/track/chasingdreams'
               },
-              {
-                title: 'EMMA AI Demo Track',
-                type: 'AI Generated',
-                year: '2024',
-                cover: null,
-                isEmma: true
-              },
             ].map((release, index) => (
               <div
                 key={index}
