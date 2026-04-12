@@ -547,57 +547,94 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Peace of Mind (Official Video)', views: 'Coming Soon', duration: '3:42', new: true },
-              { title: 'LED Mask Performance Live', views: '1.2K', duration: '58:41', live: true },
-              { title: 'Studio Session with EMMA AI', views: '450', duration: '12:18' },
-              { title: 'Girl Next Door Remix (Visualizer)', views: '890', duration: '4:15' },
-              { title: 'Love of Yesterday (Lyric Video)', views: '1.5K', duration: '3:28' },
-              { title: 'EMMA AI Tutorial', views: '780', duration: '15:22' },
+              {
+                title: 'FOLINO - Peace of Mind (Official Audio)',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '523',
+                duration: '3:42',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
+              {
+                title: 'LED Mask DJ Set - Live Performance',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '1.2K',
+                duration: '58:41',
+                live: true,
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
+              {
+                title: 'Studio Session - Making Beats with EMMA AI',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '450',
+                duration: '12:18',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
+              {
+                title: 'Girl Next Door (Remix) - Visualizer',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '890',
+                duration: '4:15',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
+              {
+                title: 'Love of Yesterday (Official Lyric Video)',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '1.5K',
+                duration: '3:28',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
+              {
+                title: 'How I Use EMMA AI for Music Production',
+                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
+                views: '780',
+                duration: '15:22',
+                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+              },
             ].map((video, index) => (
-              <div key={index} className="group cursor-pointer">
+              <a
+                key={index}
+                href={`https://youtube.com/watch?v=${video.videoId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group cursor-pointer block"
+              >
                 <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
-                  {/* Thumbnail placeholder */}
-                  <div className="absolute inset-0 bg-black/40" />
-
-                  {/* LED Mask Visual for Live Videos */}
-                  {video.live && (
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-6xl opacity-20">🎭</div>
-                    </div>
-                  )}
+                  {/* YouTube Thumbnail */}
+                  <Image
+                    src={video.thumbnail}
+                    alt={video.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
 
                   {/* Duration */}
-                  <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/80 rounded text-xs">
+                  <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/90 rounded text-xs font-semibold">
                     {video.duration}
                   </div>
 
                   {/* Badges */}
-                  {video.new && (
-                    <div className="absolute top-2 left-2 px-2 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded text-xs font-semibold">
-                      COMING SOON
-                    </div>
-                  )}
                   {video.live && (
                     <div className="absolute top-2 left-2 px-2 py-1 bg-red-600 rounded text-xs font-semibold">
                       LIVE
                     </div>
                   )}
 
-                  {/* Play Button */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8 text-black ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  {/* Play Button Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+                    <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z"/>
                       </svg>
                     </div>
                   </div>
                 </div>
 
-                <h3 className="text-lg font-semibold mt-3 group-hover:text-purple-400 transition-colors">
+                <h3 className="text-lg font-semibold mt-3 group-hover:text-purple-400 transition-colors line-clamp-2">
                   {video.title}
                 </h3>
                 <p className="text-sm text-gray-400">{video.views} views</p>
-              </div>
+              </a>
             ))}
           </div>
 
