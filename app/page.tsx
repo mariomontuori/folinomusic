@@ -36,7 +36,7 @@ export default function Home() {
       {/* Scroll Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 z-[60] bg-gray-900">
         <div
-          className="h-full bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-300"
+          className="h-full bg-gradient-to-r from-blue-400 to-blue-600 transition-all duration-300"
           style={{ width: `${scrollProgress}%` }}
         />
       </div>
@@ -52,26 +52,26 @@ export default function Home() {
               <div className="hidden md:flex space-x-8">
                 <a href="#tour" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   TOUR
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
                 <a href="#music" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   MUSIC
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
                 <a href="#videos" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   VIDEOS
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
                 <a href="#about" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   ABOUT
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
-                <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm font-semibold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
                   EMMA AI ✨
                 </a>
                 <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   SHOP
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center">
         {/* Abstract Dynamic Background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black z-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-black to-black z-10" />
 
           {/* Abstract geometric background instead of artist image */}
           <div className="absolute inset-0">
@@ -117,13 +117,13 @@ export default function Home() {
               }}
             />
             {/* Dynamic gradient mesh */}
-            <div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,#7c3aed_0deg,#ec4899_120deg,#3b82f6_240deg,#7c3aed_360deg)] opacity-20" />
+            <div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,#1e40af_0deg,#3b82f6_120deg,#60a5fa_240deg,#1e40af_360deg)] opacity-20" />
           </div>
 
           {/* Animated gradient orbs */}
           <div className="absolute inset-0 overflow-hidden z-20">
-            <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-600/30 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-pink-600/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+            <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-600/30 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse animation-delay-4000" />
           </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
           <div className={`mb-8 flex justify-center transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}>
-            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-[0_0_40px_rgba(168,85,247,0.4)]">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
               <Image
                 src="https://i.scdn.co/image/ab6761610000517458a1aebc4571b9dfd63775c8"
                 alt="FOLINO"
@@ -185,7 +185,7 @@ export default function Home() {
             Creating exciting electronic dance music
           </p>
 
-          <p className={`text-base text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold mb-12 transition-all duration-1000 delay-700 ${
+          <p className={`text-base text-transparent bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text font-semibold mb-12 transition-all duration-1000 delay-700 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}>
             LED Mask Performer • Developer of EMMA AI
@@ -241,7 +241,7 @@ export default function Home() {
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-2 rounded-full text-sm uppercase tracking-wider transition-all duration-300 ${
                   activeTab === tab
-                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white'
+                    ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
                     : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white'
                 }`}
               >
@@ -266,7 +266,7 @@ export default function Home() {
             .map((show, index) => (
               <div
                 key={index}
-                className="group relative bg-gradient-to-r from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+                className="group relative bg-gradient-to-r from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                   <div className="flex items-start space-x-6 mb-4 md:mb-0">
@@ -274,7 +274,7 @@ export default function Home() {
                       <div className="text-3xl font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
                         {show.date.split(' ')[0]}
                       </div>
-                      <div className="text-sm text-purple-400">{show.date.split(' ')[1]}</div>
+                      <div className="text-sm text-blue-400">{show.date.split(' ')[1]}</div>
                       <div className="text-xs text-gray-500">{show.day}</div>
                     </div>
                     <div>
@@ -295,7 +295,7 @@ export default function Home() {
                         <span className="text-green-400 text-sm font-semibold animate-pulse">● ON SALE</span>
                         <a
                           href="#"
-                          className="px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] transition-all duration-300 hover:scale-105"
+                          className="px-6 py-2.5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105"
                         >
                           GET TICKETS
                         </a>
@@ -381,7 +381,7 @@ export default function Home() {
                 >
                   <div className={`${
                     release.featured ? 'aspect-square md:aspect-video' : 'aspect-square'
-                  } relative overflow-hidden bg-gradient-to-br from-purple-900/50 via-black to-blue-900/50`}>
+                  } relative overflow-hidden bg-gradient-to-br from-blue-900/50 via-black to-blue-900/50`}>
 
                     {/* Album Cover */}
                     {release.cover ? (
@@ -393,7 +393,7 @@ export default function Home() {
                         sizes={release.featured ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 50vw, 33vw"}
                       />
                     ) : (
-                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-purple-600/20 to-pink-600/20">
+                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-blue-600/20 to-blue-500/20">
                         <div className="text-6xl opacity-30">🎵</div>
                       </div>
                     )}
@@ -466,20 +466,20 @@ export default function Home() {
 
       {/* EMMA AI Section - Premium Feature */}
       <section className="py-24 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-950/20 via-black to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 via-black to-black" />
 
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse animation-delay-2000" />
         </div>
 
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-1 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-full text-sm font-semibold text-purple-400 mb-4">
+            <div className="inline-block px-4 py-1 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full text-sm font-semibold text-blue-400 mb-4">
               MY INNOVATION
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">
               EMMA AI STUDIO
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -494,24 +494,24 @@ export default function Home() {
                 icon: '🎹',
                 title: 'AI Sound Design',
                 description: 'Generate Serum & Sylenth presets with natural language',
-                gradient: 'from-purple-600 to-blue-600'
+                gradient: 'from-blue-500 to-blue-600'
               },
               {
                 icon: '🎵',
                 title: 'Stem Separation',
                 description: 'Extract vocals, drums, bass with 99.9% accuracy',
-                gradient: 'from-pink-600 to-purple-600'
+                gradient: 'from-blue-400 to-blue-600'
               },
               {
                 icon: '✨',
                 title: 'Smart Composition',
                 description: 'AI-powered chord progressions & melody generation',
-                gradient: 'from-blue-600 to-purple-600'
+                gradient: 'from-blue-600 to-blue-700'
               }
             ].map((feature, index) => (
               <div
                 key={index}
-                className="group relative bg-gradient-to-b from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)] hover:scale-105"
+                className="group relative bg-gradient-to-b from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:scale-105"
               >
                 <div className="text-5xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -526,7 +526,7 @@ export default function Home() {
               href="https://emma.folinomusic.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-300 hover:scale-105 group"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105 group"
             >
               <span>TRY EMMA AI FREE</span>
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -553,7 +553,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Featured YouTube Video - Larger embed */}
             <div className="md:col-span-2">
-              <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
+              <div className="relative aspect-video bg-gradient-to-br from-blue-900/30 to-blue-900/30 rounded-xl overflow-hidden">
                 <iframe
                   src="https://www.youtube.com/embed/f8guvDStX5M"
                   title="FOLINO - Peace of Mind (Official Audio)"
@@ -590,7 +590,7 @@ export default function Home() {
               },
             ].map((video, index) => (
               <div key={index} className="space-y-3">
-                <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
+                <div className="relative aspect-video bg-gradient-to-br from-blue-900/30 to-blue-900/30 rounded-xl overflow-hidden">
                   <iframe
                     src={`https://www.youtube.com/embed/${video.videoId}`}
                     title={video.title}
@@ -623,7 +623,7 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-24 px-6 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-950/10 to-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-blue-950/10 to-black" />
 
         <div className="relative max-w-4xl mx-auto text-center">
           <div className="mb-16">
@@ -640,18 +640,18 @@ export default function Home() {
             </p>
 
             <p className="text-gray-400">
-              Performing with an innovative <span className="text-purple-400 font-semibold">LED mask</span> that syncs
+              Performing with an innovative <span className="text-blue-400 font-semibold">LED mask</span> that syncs
               with the music, FOLINO creates immersive visual experiences that complement the exciting electronic dance music.
             </p>
 
             <div className="py-8 my-8 border-y border-white/10">
-              <p className="text-2xl font-light text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
+              <p className="text-2xl font-light text-transparent bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text">
                 "I don't just make music, I build the future tools for making it"
               </p>
             </div>
 
             <p className="text-gray-400">
-              Beyond the decks, FOLINO is the developer of <span className="text-purple-400 font-semibold">EMMA AI</span>,
+              Beyond the decks, FOLINO is the developer of <span className="text-blue-400 font-semibold">EMMA AI</span>,
               a revolutionary music production platform that democratizes professional music creation for artists worldwide.
             </p>
           </div>
@@ -667,7 +667,7 @@ export default function Home() {
               <div key={index}>
                 <div className={`text-4xl font-bold mb-2 ${
                   stat.highlight
-                    ? 'bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent'
+                    ? 'bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent'
                     : 'text-white'
                 }`}>
                   {stat.number}
@@ -691,7 +691,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <a
               href="mailto:management@folinomusic.com"
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
             >
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                 Management & Bookings
@@ -701,7 +701,7 @@ export default function Home() {
 
             <a
               href="mailto:press@folinomusic.com"
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]"
+              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
             >
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                 Press & Media
@@ -724,7 +724,7 @@ export default function Home() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-purple-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]"
+                className="w-12 h-12 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-blue-500/50 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
               >
                 <span className="text-xs">{social.name[0]}</span>
               </a>
@@ -742,7 +742,7 @@ export default function Home() {
                 FOLINO
               </h3>
               <p className="text-xs text-gray-500 mt-1">Masked DJ • Electronic Music Producer</p>
-              <p className="text-xs text-purple-400">Creator of EMMA AI Studio</p>
+              <p className="text-xs text-blue-400">Creator of EMMA AI Studio</p>
             </div>
 
             <div className="flex space-x-6 text-sm">
@@ -750,7 +750,7 @@ export default function Home() {
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms</a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Press Kit</a>
               <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Shop</a>
-              <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-colors">EMMA AI</a>
+              <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">EMMA AI</a>
             </div>
           </div>
 
