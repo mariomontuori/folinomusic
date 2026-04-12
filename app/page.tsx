@@ -233,54 +233,23 @@ export default function Home() {
             <p className="text-gray-400">Join me live around the world</p>
           </div>
 
-          {/* Tour Dates */}
-          <div className="space-y-4">
-            {[
-              { date: 'MAY 2025', city: 'Miami, FL', venue: 'Space Miami', country: 'USA' },
-              { date: 'JUN 2025', city: 'Los Angeles, CA', venue: 'Exchange LA', country: 'USA' },
-              { date: 'JUN 2025', city: 'New York, NY', venue: 'Brooklyn Mirage', country: 'USA' },
-              { date: 'JUL 2025', city: 'London, UK', venue: 'Printworks', country: 'UK' },
-              { date: 'JUL 2025', city: 'Berlin, DE', venue: 'Sisyphos', country: 'Germany' },
-              { date: 'AUG 2025', city: 'Amsterdam, NL', venue: 'De School', country: 'Netherlands' },
-              { date: 'SEP 2025', city: 'Tokyo, JP', venue: 'Contact Tokyo', country: 'Japan' },
-              { date: 'SEP 2025', city: 'Seoul, KR', venue: 'Cakeshop', country: 'South Korea' },
-            ].map((show, index) => (
-              <div
-                key={index}
-                className="group relative bg-gradient-to-r from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div className="flex items-start space-x-6 mb-4 md:mb-0">
-                    <div className="text-center min-w-[80px]">
-                      <div className="text-2xl font-bold bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
-                        {show.date.split(' ')[0]}
-                      </div>
-                      <div className="text-sm text-blue-400">{show.date.split(' ')[1]}</div>
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-semibold mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-blue-500 group-hover:bg-clip-text transition-all duration-300">
-                        {show.city}
-                      </h3>
-                      <p className="text-gray-400">{show.venue}</p>
-                      <p className="text-xs text-gray-500 mt-1">{show.country}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
-                    <span className="px-6 py-2.5 bg-gradient-to-r from-blue-600/20 to-blue-500/20 text-blue-400 rounded-full text-sm font-semibold">
-                      COMING SOON
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Coming Soon Message */}
+          <div className="text-center py-20">
+            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
+              COMING SOON
+            </h3>
+            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+              Tour dates will be announced soon. Follow for updates.
+            </p>
 
-          {/* Follow for Updates */}
-          <div className="text-center mt-12">
-            <p className="text-gray-400 mb-4">More dates to be announced</p>
+            {/* Follow for Updates */}
             <div className="flex justify-center gap-4">
               <a href="https://instagram.com/folinomusic" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">
-                Follow for Updates
+                Follow on Instagram
+              </a>
+              <span className="text-gray-600">•</span>
+              <a href="https://spotify.com/artist/7DM9leryznWCGSDZiSZGIY" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">
+                Follow on Spotify
               </a>
             </div>
           </div>
