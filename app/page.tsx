@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -11,291 +10,250 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-black">
-      {/* Navigation - Apple Style */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
+    <div className="min-h-screen bg-black text-white">
+      {/* Navigation - Minimalist */}
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
         <div className="mx-auto max-w-[980px] px-5">
-          <div className="flex h-11 items-center justify-between">
+          <div className="flex h-14 items-center justify-between">
             <div className="flex items-center">
-              <h1 className="text-[21px] font-semibold tracking-tight">Folino Music</h1>
+              <h1 className="text-[18px] font-semibold tracking-wide">FOLINO</h1>
             </div>
-            <div className="flex items-center gap-7 text-[12px]">
-              <Link href="/features" className="text-gray-600 hover:text-black transition-colors">
-                Features
-              </Link>
-              <Link href="/pricing" className="text-gray-600 hover:text-black transition-colors">
-                Pricing
-              </Link>
-              <Link href="/support" className="text-gray-600 hover:text-black transition-colors">
-                Support
-              </Link>
-              <div className="w-px h-4 bg-gray-300" />
-              <Link href="/login" className="text-gray-600 hover:text-black transition-colors">
-                Sign In
-              </Link>
-              <Link href="/signup" className="bg-black text-white px-4 py-1.5 rounded-full hover:bg-gray-900 transition-colors">
-                Try Free
-              </Link>
+            <div className="flex items-center gap-8 text-[13px] tracking-wide">
+              <a href="#music" className="text-white/70 hover:text-white transition-colors">
+                MUSIC
+              </a>
+              <a href="#about" className="text-white/70 hover:text-white transition-colors">
+                ABOUT
+              </a>
+              <a href="#shows" className="text-white/70 hover:text-white transition-colors">
+                SHOWS
+              </a>
+              <a href="#contact" className="text-white/70 hover:text-white transition-colors">
+                CONTACT
+              </a>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section - Apple Style */}
-      <section className="pt-24 pb-16 px-5">
-        <div className="mx-auto max-w-[980px]">
-          <div className={`text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="mb-6">
-              <span className="text-[17px] text-gray-500 font-normal">Music Production Suite</span>
-            </div>
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black" />
 
-            <h1 className="text-[56px] leading-[1.07] font-semibold tracking-[-0.015em] mb-6">
-              Create professional music.
-              <br />
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                In seconds.
-              </span>
-            </h1>
-
-            <p className="text-[21px] leading-[1.38] text-gray-600 max-w-[720px] mx-auto mb-10 font-normal">
-              AI-powered tools for sound design, stem extraction, and chord progressions.
-              Professional music production made remarkably simple.
-            </p>
-
-            <div className="flex items-center justify-center gap-4">
-              <Link
-                href="/signup"
-                className="bg-blue-600 text-white px-7 py-3 rounded-full text-[17px] hover:bg-blue-700 transition-colors"
-              >
-                Get started
-              </Link>
-              <Link
-                href="/demo"
-                className="text-blue-600 text-[17px] hover:underline flex items-center gap-1"
-              >
-                Try a demo
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature Cards - Apple Style Grid */}
-      <section className="py-20 px-5 bg-gray-50">
-        <div className="mx-auto max-w-[980px]">
-          <div className="text-center mb-16">
-            <h2 className="text-[48px] font-semibold tracking-[-0.015em] mb-4">
-              Four amazing tools.
-            </h2>
-            <p className="text-[21px] text-gray-600">
-              Everything you need to produce professional music.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-5">
-            {/* Sound Design Card */}
-            <div className="bg-white rounded-[18px] p-10 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                </svg>
-              </div>
-              <h3 className="text-[24px] font-semibold mb-3">Sound Design</h3>
-              <p className="text-[17px] text-gray-600 leading-[1.47]">
-                Generate Serum and Sylenth presets instantly.
-                Professional sounds at your fingertips.
-              </p>
-            </div>
-
-            {/* Stems Card */}
-            <div className="bg-white rounded-[18px] p-10 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                </svg>
-              </div>
-              <h3 className="text-[24px] font-semibold mb-3">Stem Extraction</h3>
-              <p className="text-[17px] text-gray-600 leading-[1.47]">
-                Isolate vocals, drums, bass, and more.
-                Perfect separation powered by AI.
-              </p>
-            </div>
-
-            {/* Chords Card */}
-            <div className="bg-white rounded-[18px] p-10 text-center hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                </svg>
-              </div>
-              <h3 className="text-[24px] font-semibold mb-3">Smart Chords</h3>
-              <p className="text-[17px] text-gray-600 leading-[1.47]">
-                Generate professional chord progressions.
-                Any key, any style, instantly.
-              </p>
-            </div>
-
-            {/* Coming Soon Card */}
-            <div className="bg-gray-100 rounded-[18px] p-10 text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-gray-300 rounded-2xl flex items-center justify-center">
-                <svg className="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-              <h3 className="text-[24px] font-semibold mb-3 text-gray-700">More Coming Soon</h3>
-              <p className="text-[17px] text-gray-500 leading-[1.47]">
-                New features in development.
-                Stay tuned for updates.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing - Apple Style */}
-      <section className="py-20 px-5">
-        <div className="mx-auto max-w-[980px]">
-          <div className="text-center mb-16">
-            <h2 className="text-[48px] font-semibold tracking-[-0.015em] mb-4">
-              Choose your plan.
-            </h2>
-            <p className="text-[21px] text-gray-600">
-              Start free. Upgrade when you need more.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-3 gap-8">
-            {/* Starter */}
-            <div className="text-center">
-              <h3 className="text-[21px] font-semibold mb-2">Starter</h3>
-              <div className="text-[48px] font-semibold mb-2">$0</div>
-              <div className="text-[14px] text-gray-600 mb-6">per month</div>
-              <div className="space-y-3 mb-8 text-[14px] text-gray-600">
-                <div>Limited usage</div>
-                <div>Basic features</div>
-                <div>Community support</div>
-              </div>
-              <Link
-                href="/signup"
-                className="block w-full py-2 border border-gray-300 rounded-full text-[17px] hover:border-gray-400 transition-colors"
-              >
-                Get started
-              </Link>
-            </div>
-
-            {/* Professional */}
-            <div className="text-center">
-              <div className="inline-block px-3 py-1 mb-4 text-[12px] font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
-                MOST POPULAR
-              </div>
-              <h3 className="text-[21px] font-semibold mb-2">Professional</h3>
-              <div className="text-[48px] font-semibold mb-2">$29</div>
-              <div className="text-[14px] text-gray-600 mb-6">per month</div>
-              <div className="space-y-3 mb-8 text-[14px] text-gray-600">
-                <div>High usage limits</div>
-                <div>All features</div>
-                <div>Priority support</div>
-              </div>
-              <Link
-                href="/signup"
-                className="block w-full py-2 bg-black text-white rounded-full text-[17px] hover:bg-gray-900 transition-colors"
-              >
-                Start free trial
-              </Link>
-            </div>
-
-            {/* Studio */}
-            <div className="text-center">
-              <h3 className="text-[21px] font-semibold mb-2">Studio</h3>
-              <div className="text-[48px] font-semibold mb-2">$99</div>
-              <div className="text-[14px] text-gray-600 mb-6">per month</div>
-              <div className="space-y-3 mb-8 text-[14px] text-gray-600">
-                <div>Unlimited usage</div>
-                <div>Team features</div>
-                <div>Dedicated support</div>
-              </div>
-              <Link
-                href="/contact"
-                className="block w-full py-2 border border-gray-300 rounded-full text-[17px] hover:border-gray-400 transition-colors"
-              >
-                Contact sales
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section - Apple Style */}
-      <section className="py-16 px-5 bg-gray-50">
-        <div className="mx-auto max-w-[980px]">
-          <div className="grid grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-[48px] font-semibold">10K+</div>
-              <div className="text-[17px] text-gray-600">Active producers</div>
-            </div>
-            <div>
-              <div className="text-[48px] font-semibold">500K+</div>
-              <div className="text-[17px] text-gray-600">Tracks created</div>
-            </div>
-            <div>
-              <div className="text-[48px] font-semibold">4.9</div>
-              <div className="text-[17px] text-gray-600">Average rating</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section - Apple Style */}
-      <section className="py-20 px-5">
-        <div className="mx-auto max-w-[720px] text-center">
-          <h2 className="text-[48px] font-semibold tracking-[-0.015em] mb-6">
-            Ready to make music?
-          </h2>
-          <p className="text-[21px] text-gray-600 mb-10">
-            Join thousands of producers creating professional tracks with Folino Music.
+        {/* Content */}
+        <div className={`relative z-10 text-center px-5 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h1 className="text-[72px] md:text-[96px] font-bold tracking-wider mb-4">
+            FOLINO
+          </h1>
+          <p className="text-[18px] md:text-[21px] text-white/60 mb-8 tracking-wide">
+            Electronic Music Producer
           </p>
           <div className="flex items-center justify-center gap-4">
-            <Link
-              href="/signup"
-              className="bg-blue-600 text-white px-7 py-3 rounded-full text-[17px] hover:bg-blue-700 transition-colors"
+            <a
+              href="#music"
+              className="px-8 py-3 border border-white/30 hover:bg-white hover:text-black transition-all text-[14px] tracking-wide"
             >
-              Start your free trial
-            </Link>
-            <Link
-              href="/demo"
-              className="text-blue-600 text-[17px] hover:underline"
+              LISTEN NOW
+            </a>
+            <a
+              href="https://open.spotify.com/artist/folino"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-white text-black hover:bg-white/90 transition-all text-[14px] tracking-wide"
             >
-              Watch a demo →
-            </Link>
+              SPOTIFY
+            </a>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg className="w-6 h-6 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </div>
+      </section>
+
+      {/* Latest Release Section */}
+      <section id="music" className="py-24 px-5 bg-gray-950">
+        <div className="mx-auto max-w-[980px]">
+          <h2 className="text-[14px] tracking-[0.3em] text-white/60 mb-12 text-center">
+            LATEST RELEASE
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Album Cover */}
+            <div className="aspect-square bg-gradient-to-br from-gray-800 to-gray-900 rounded-sm">
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="text-[48px] font-bold text-white/20">ALBUM</span>
+              </div>
+            </div>
+
+            {/* Album Info */}
+            <div>
+              <h3 className="text-[32px] font-semibold mb-2">Midnight Dreams</h3>
+              <p className="text-white/60 mb-6">Released November 2024</p>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-center justify-between py-2 border-b border-white/10">
+                  <span className="text-[14px]">1. Intro</span>
+                  <span className="text-[12px] text-white/40">3:24</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-white/10">
+                  <span className="text-[14px]">2. Midnight Dreams</span>
+                  <span className="text-[12px] text-white/40">4:12</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-white/10">
+                  <span className="text-[14px]">3. Electric Nights</span>
+                  <span className="text-[12px] text-white/40">5:03</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-white/10">
+                  <span className="text-[14px]">4. Dawn</span>
+                  <span className="text-[12px] text-white/40">3:47</span>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <a href="#" className="text-[13px] text-white/60 hover:text-white transition-colors">
+                  APPLE MUSIC
+                </a>
+                <a href="#" className="text-[13px] text-white/60 hover:text-white transition-colors">
+                  SPOTIFY
+                </a>
+                <a href="#" className="text-[13px] text-white/60 hover:text-white transition-colors">
+                  SOUNDCLOUD
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer - Apple Style */}
-      <footer className="border-t border-gray-200 bg-gray-50">
-        <div className="mx-auto max-w-[980px] px-5 py-5">
-          <div className="flex items-center justify-between text-[12px] text-gray-500">
-            <div>
-              Copyright © 2024 Folino Music. All rights reserved.
+      {/* About Section */}
+      <section id="about" className="py-24 px-5 bg-black">
+        <div className="mx-auto max-w-[720px] text-center">
+          <h2 className="text-[14px] tracking-[0.3em] text-white/60 mb-12">
+            ABOUT
+          </h2>
+
+          <p className="text-[21px] leading-[1.6] text-white/80 mb-8">
+            Folino is an electronic music producer creating immersive soundscapes
+            that blend ambient textures with driving rhythms.
+          </p>
+
+          <p className="text-[17px] leading-[1.6] text-white/60">
+            Drawing inspiration from the intersection of technology and emotion,
+            each track is crafted to transport listeners through sonic journeys
+            that explore the boundaries of electronic music.
+          </p>
+        </div>
+      </section>
+
+      {/* Shows Section */}
+      <section id="shows" className="py-24 px-5 bg-gray-950">
+        <div className="mx-auto max-w-[980px]">
+          <h2 className="text-[14px] tracking-[0.3em] text-white/60 mb-12 text-center">
+            UPCOMING SHOWS
+          </h2>
+
+          <div className="space-y-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between py-6 border-b border-white/10">
+              <div>
+                <h3 className="text-[21px] font-semibold mb-1">Los Angeles, CA</h3>
+                <p className="text-[14px] text-white/60">The Echo</p>
+              </div>
+              <div className="mt-4 md:mt-0 flex items-center gap-8">
+                <span className="text-[14px] text-white/60">DEC 15, 2024</span>
+                <a href="#" className="text-[13px] border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition-all">
+                  TICKETS
+                </a>
+              </div>
             </div>
-            <div className="flex items-center gap-6">
-              <Link href="/privacy" className="hover:text-gray-700 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="hover:text-gray-700 transition-colors">
-                Terms of Use
-              </Link>
-              <Link href="/legal" className="hover:text-gray-700 transition-colors">
-                Legal
-              </Link>
-              <Link href="/sitemap" className="hover:text-gray-700 transition-colors">
-                Site Map
-              </Link>
+
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between py-6 border-b border-white/10">
+              <div>
+                <h3 className="text-[21px] font-semibold mb-1">San Francisco, CA</h3>
+                <p className="text-[14px] text-white/60">The Independent</p>
+              </div>
+              <div className="mt-4 md:mt-0 flex items-center gap-8">
+                <span className="text-[14px] text-white/60">DEC 22, 2024</span>
+                <a href="#" className="text-[13px] border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition-all">
+                  TICKETS
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between py-6 border-b border-white/10">
+              <div>
+                <h3 className="text-[21px] font-semibold mb-1">New York, NY</h3>
+                <p className="text-[14px] text-white/60">Brooklyn Steel</p>
+              </div>
+              <div className="mt-4 md:mt-0 flex items-center gap-8">
+                <span className="text-[14px] text-white/60">JAN 10, 2025</span>
+                <a href="#" className="text-[13px] border border-white/30 px-4 py-2 hover:bg-white hover:text-black transition-all">
+                  TICKETS
+                </a>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-24 px-5 bg-black">
+        <div className="mx-auto max-w-[720px] text-center">
+          <h2 className="text-[14px] tracking-[0.3em] text-white/60 mb-12">
+            CONTACT
+          </h2>
+
+          <div className="space-y-6">
+            <div>
+              <p className="text-[13px] text-white/40 mb-2">MANAGEMENT</p>
+              <a href="mailto:management@folinomusic.com" className="text-[17px] hover:text-white/80 transition-colors">
+                management@folinomusic.com
+              </a>
+            </div>
+
+            <div>
+              <p className="text-[13px] text-white/40 mb-2">BOOKINGS</p>
+              <a href="mailto:bookings@folinomusic.com" className="text-[17px] hover:text-white/80 transition-colors">
+                bookings@folinomusic.com
+              </a>
+            </div>
+
+            <div className="pt-8 flex items-center justify-center gap-6">
+              <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
+                </svg>
+              </a>
+              <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 110-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0012.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z"/>
+                </svg>
+              </a>
+              <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+              </a>
+              <a href="#" className="text-white/60 hover:text-white transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-5 border-t border-white/10">
+        <div className="mx-auto max-w-[980px] text-center">
+          <p className="text-[12px] text-white/40">
+            © 2024 Folino Music. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>

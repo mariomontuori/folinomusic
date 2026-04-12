@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Folino Music - AI-Powered Music Production",
-  description: "Professional music production made simple. AI-powered tools for sound design, stem extraction, and chord progressions.",
+  title: "Folino - Electronic Music Producer",
+  description: "Official website of Folino. Electronic music producer creating immersive soundscapes. Listen to music, view upcoming shows, and more.",
 };
 
 export default function RootLayout({
