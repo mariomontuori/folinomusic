@@ -66,8 +66,12 @@ export default function Home() {
                   ABOUT
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
-                <a href="/emma" className="relative text-sm font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm font-semibold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   EMMA AI ✨
+                </a>
+                <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
+                  SHOP
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
               </div>
             </div>
@@ -526,7 +530,9 @@ export default function Home() {
 
           <div className="text-center">
             <a
-              href="/emma"
+              href="https://emma.folinomusic.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white hover:shadow-[0_0_30px_rgba(168,85,247,0.5)] transition-all duration-300 hover:scale-105 group"
             >
               <span>TRY EMMA AI FREE</span>
@@ -751,7 +757,8 @@ export default function Home() {
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy</a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms</a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">Press Kit</a>
-              <a href="/emma" className="text-purple-400 hover:text-purple-300 transition-colors">EMMA AI</a>
+              <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Shop</a>
+              <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-colors">EMMA AI</a>
             </div>
           </div>
 
