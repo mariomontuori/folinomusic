@@ -145,11 +145,11 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className={`relative z-30 text-center px-6 max-w-5xl mx-auto transition-all duration-1500 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        <div className={`relative z-30 text-center px-6 max-w-5xl mx-auto transition-all duration-[3000ms] ease-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}>
           {/* Artist Profile Image */}
-          <div className={`mb-8 flex justify-center transition-all duration-1000 delay-200 ${
+          <div className={`mb-8 flex justify-center transition-all duration-[2500ms] delay-200 ${
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}>
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-[0_0_40px_rgba(59,130,246,0.4)]">
@@ -163,7 +163,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={`mb-4 overflow-hidden transition-all duration-1000 delay-300 ${
+          <div className={`mb-4 overflow-hidden transition-all duration-[2500ms] delay-300 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}>
             <p className="text-sm uppercase tracking-[0.3em] text-gray-400 font-medium">
@@ -171,7 +171,7 @@ export default function Home() {
             </p>
           </div>
 
-          <h1 className={`text-7xl md:text-8xl lg:text-9xl font-bold mb-6 transition-all duration-1000 delay-400 ${
+          <h1 className={`text-7xl md:text-8xl lg:text-9xl font-bold mb-6 transition-all duration-[2500ms] delay-400 ${
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}>
             <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
@@ -179,20 +179,20 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className={`text-xl md:text-2xl text-gray-300 mb-3 transition-all duration-1000 delay-600 ${
+          <p className={`text-xl md:text-2xl text-gray-300 mb-3 transition-all duration-[2500ms] delay-600 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}>
             Creating exciting electronic dance music
           </p>
 
-          <p className={`text-base text-transparent bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text font-semibold mb-12 transition-all duration-1000 delay-700 ${
+          <p className={`text-base text-transparent bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text font-semibold mb-12 transition-all duration-[2500ms] delay-700 ${
             isVisible ? 'opacity-100' : 'opacity-0'
           }`}>
             LED Mask Performer • Developer of EMMA AI
           </p>
 
-          <div className={`flex flex-col sm:flex-row justify-center gap-4 transition-all duration-1000 delay-900 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          <div className={`flex flex-col sm:flex-row justify-center gap-4 transition-all duration-[3000ms] delay-900 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
             <a
               href="https://open.spotify.com/artist/7DM9leryznWCGSDZiSZGIY"
