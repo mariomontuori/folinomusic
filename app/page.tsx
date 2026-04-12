@@ -614,7 +614,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center text-red-500 hover:text-red-400 transition-colors group"
             >
-              <span>View all videos on YouTube</span>
+              <span>View all videos on YouTube @folinomusic</span>
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
