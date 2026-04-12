@@ -159,6 +159,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EMMA AI - Apple Style Clean Section */}
+      <section className="py-24 px-5 bg-white text-black">
+        <div className="mx-auto max-w-[980px]">
+          <div className="text-center mb-16">
+            <p className="text-[17px] text-gray-500 mb-6">Introducing</p>
+            <h2 className="text-[56px] font-semibold tracking-tight mb-6">
+              EMMA AI Studio
+            </h2>
+            <p className="text-[21px] text-gray-600 max-w-[600px] mx-auto mb-10">
+              Revolutionary AI-powered music production platform.
+              Developed by Folino. Now available for all artists.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+              </div>
+              <h3 className="text-[21px] font-medium mb-2">Sound Design</h3>
+              <p className="text-[14px] text-gray-600">
+                AI-generated presets for Serum & Sylenth
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                </svg>
+              </div>
+              <h3 className="text-[21px] font-medium mb-2">Stem Extraction</h3>
+              <p className="text-[14px] text-gray-600">
+                Isolate vocals, drums, bass instantly
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+              </div>
+              <h3 className="text-[21px] font-medium mb-2">Smart Composition</h3>
+              <p className="text-[14px] text-gray-600">
+                Professional chord progressions & melodies
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <a href="/emma"
+               className="inline-block bg-black text-white px-8 py-4 rounded-full text-[17px] hover:bg-gray-900 transition-colors">
+              Try EMMA AI
+            </a>
+            <p className="text-[14px] text-gray-500 mt-4">
+              Start creating with AI. No credit card required.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Release Section - Premium Layout */}
       <section id="music" className="relative py-32 px-8">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-950 to-black" />
@@ -361,51 +425,6 @@ export default function Home() {
               VIEW ALL DATES →
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* EMMA AI Showcase Section */}
-      <section className="relative py-32 px-8 bg-gradient-to-b from-purple-900/10 via-black to-black">
-        <div className="relative mx-auto max-w-4xl text-center">
-          <div className="mb-20">
-            <h2 className="text-[11px] tracking-[0.5em] text-purple-400/50 mb-4">MY LATEST CREATION</h2>
-            <div className="w-20 h-[0.5px] bg-purple-400/30 mx-auto" />
-          </div>
-
-          <h3 className="text-[48px] md:text-[56px] font-thin mb-6">
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-              EMMA AI Studio
-            </span>
-          </h3>
-
-          <p className="text-[18px] text-white/60 mb-8 max-w-2xl mx-auto">
-            After years of producing music and developing technology, I created EMMA -
-            an AI-powered music production platform that's revolutionizing how artists create.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div>
-              <p className="text-[24px] font-thin text-purple-400/80">Sound Design</p>
-              <p className="text-[12px] text-white/40 mt-2">AI-generated presets</p>
-            </div>
-            <div>
-              <p className="text-[24px] font-thin text-purple-400/80">Stem Extraction</p>
-              <p className="text-[12px] text-white/40 mt-2">Isolate any element</p>
-            </div>
-            <div>
-              <p className="text-[24px] font-thin text-purple-400/80">Smart Composition</p>
-              <p className="text-[12px] text-white/40 mt-2">Intelligent arrangements</p>
-            </div>
-          </div>
-
-          <a href="/emma"
-             className="inline-block px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-[14px] tracking-[0.2em] transition-all duration-300">
-            EXPERIENCE EMMA AI
-          </a>
-
-          <p className="text-[11px] text-white/30 mt-6">
-            Now available for producers worldwide
-          </p>
         </div>
       </section>
 
