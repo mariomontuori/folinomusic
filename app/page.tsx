@@ -421,6 +421,7 @@ export default function Home() {
             ))}
           </div>
 
+
           {/* Streaming Platforms */}
           <div className="flex flex-wrap justify-center gap-4 mt-12">
             <a
@@ -545,96 +546,58 @@ export default function Home() {
             <p className="text-gray-400">Live performances and music videos</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Featured YouTube Video - Larger embed */}
+            <div className="md:col-span-2">
+              <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/f8guvDStX5M?rel=0&modestbranding=1"
+                  title="FOLINO - Peace of Mind (Official Audio)"
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <h3 className="text-2xl font-semibold mt-4">FOLINO - Peace of Mind (Official Audio)</h3>
+              <p className="text-gray-400 mt-2">Latest release showcasing the innovative sound design powered by EMMA AI</p>
+            </div>
+
+            {/* Additional YouTube Videos */}
             {[
               {
-                title: 'FOLINO - Peace of Mind (Official Audio)',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '523',
-                duration: '3:42',
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+                title: 'Girl Next Door (Remix)',
+                videoId: 'pCY9GK5hwoE',
+                description: 'Remix featuring Sydney Scotia'
               },
               {
-                title: 'LED Mask DJ Set - Live Performance',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '1.2K',
-                duration: '58:41',
-                live: true,
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+                title: 'Love of Yesterday',
+                videoId: 'HfjRS7K8KGI',
+                description: 'Official music video'
               },
               {
-                title: 'Studio Session - Making Beats with EMMA AI',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '450',
-                duration: '12:18',
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+                title: 'Memories We Make',
+                videoId: 'w6TLpb4by_g',
+                description: 'Emotional electronic journey'
               },
               {
-                title: 'Girl Next Door (Remix) - Visualizer',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '890',
-                duration: '4:15',
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-              },
-              {
-                title: 'Love of Yesterday (Official Lyric Video)',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '1.5K',
-                duration: '3:28',
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
-              },
-              {
-                title: 'How I Use EMMA AI for Music Production',
-                videoId: 'dQw4w9WgXcQ', // Replace with actual video ID
-                views: '780',
-                duration: '15:22',
-                thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg'
+                title: 'Chasing Dreams',
+                videoId: 'wU94zYrIQbo',
+                description: 'Uplifting electronic anthem'
               },
             ].map((video, index) => (
-              <a
-                key={index}
-                href={`https://youtube.com/watch?v=${video.videoId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group cursor-pointer block"
-              >
+              <div key={index} className="space-y-3">
                 <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
-                  {/* YouTube Thumbnail */}
-                  <Image
-                    src={video.thumbnail}
-                    alt={video.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.videoId}?rel=0&modestbranding=1`}
+                    title={video.title}
+                    className="absolute inset-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                   />
-
-                  {/* Duration */}
-                  <div className="absolute bottom-2 right-2 px-2 py-1 bg-black/90 rounded text-xs font-semibold">
-                    {video.duration}
-                  </div>
-
-                  {/* Badges */}
-                  {video.live && (
-                    <div className="absolute top-2 left-2 px-2 py-1 bg-red-600 rounded text-xs font-semibold">
-                      LIVE
-                    </div>
-                  )}
-
-                  {/* Play Button Overlay */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
-                    <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
-                    </div>
-                  </div>
                 </div>
-
-                <h3 className="text-lg font-semibold mt-3 group-hover:text-purple-400 transition-colors line-clamp-2">
-                  {video.title}
-                </h3>
-                <p className="text-sm text-gray-400">{video.views} views</p>
-              </a>
+                <h3 className="text-lg font-semibold">{video.title}</h3>
+                <p className="text-sm text-gray-400">{video.description}</p>
+              </div>
             ))}
           </div>
 
