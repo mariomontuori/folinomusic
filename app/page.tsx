@@ -99,21 +99,25 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section - With Artist Image */}
+      {/* Hero Section - Abstract Background */}
       <section className="relative h-screen flex items-center justify-center">
-        {/* Background with Artist Image */}
+        {/* Abstract Dynamic Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black z-10" />
 
-          {/* Artist Image Background */}
-          <div className="absolute inset-0 opacity-20">
-            <Image
-              src="https://i.scdn.co/image/ab6761610000517458a1aebc4571b9dfd63775c8"
-              alt="FOLINO"
-              fill
-              className="object-cover object-center"
-              priority
+          {/* Abstract geometric background instead of artist image */}
+          <div className="absolute inset-0">
+            {/* Grid pattern */}
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{
+                backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                                  linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)`,
+                backgroundSize: '60px 60px'
+              }}
             />
+            {/* Dynamic gradient mesh */}
+            <div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,#7c3aed_0deg,#ec4899_120deg,#3b82f6_240deg,#7c3aed_360deg)] opacity-20" />
           </div>
 
           {/* Animated gradient orbs */}
