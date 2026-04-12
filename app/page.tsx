@@ -118,12 +118,12 @@ export default function Home() {
             <p className={`text-[16px] md:text-[18px] text-white/50 max-w-2xl mx-auto leading-relaxed transition-all duration-1000 delay-700 ${
               isVisible ? 'translate-y-0' : 'translate-y-full'
             }`}>
-              Crafting immersive sonic landscapes with EMMA AI technology
+              Producer & AI Developer
             </p>
             <p className={`text-[14px] text-purple-400/60 mt-3 transition-all duration-1000 delay-800 ${
               isVisible ? 'opacity-100' : 'opacity-0'
             }`}>
-              Powered by EMMA - Electronic Music & Media Assistant
+              Creator of EMMA AI - Now Available for All Artists
             </p>
           </div>
 
@@ -204,7 +204,7 @@ export default function Home() {
                 <p className="text-[14px] text-white/40 tracking-[0.2em]">RELEASED NOVEMBER 2024</p>
                 <p className="text-[14px] text-white/40 tracking-[0.2em]">12 TRACKS · 57 MINUTES</p>
                 <p className="text-[12px] text-white/30 tracking-[0.2em] mt-2">
-                  PRODUCED WITH <span className="text-purple-400/60">EMMA AI</span>
+                  PRODUCED USING MY OWN <span className="text-purple-400/60">EMMA AI</span> TECHNOLOGY
                 </p>
               </div>
 
@@ -256,19 +256,19 @@ export default function Home() {
 
           <div className="space-y-8">
             <p className="text-[28px] md:text-[32px] font-thin leading-relaxed text-white/90">
-              Folino creates electronic music that transcends boundaries
+              Electronic Producer & AI Technology Pioneer
             </p>
 
             <p className="text-[16px] md:text-[18px] leading-loose text-white/50 max-w-3xl mx-auto">
-              With a unique blend of ambient textures, driving rhythms, and emotive melodies,
-              each composition is a journey through the depths of electronic soundscapes.
-              Drawing from years of experience in music production and sound design,
-              Folino crafts immersive experiences that resonate with audiences worldwide.
+              Beyond creating immersive electronic soundscapes, Folino has developed EMMA AI -
+              a revolutionary music production platform that empowers artists worldwide.
+              This cutting-edge technology represents years of experience in both music production
+              and artificial intelligence development.
             </p>
 
             <div className="mt-12 pt-8 border-t border-white/10">
               <p className="text-[16px] text-white/50 mb-2">
-                Production Partner
+                Latest Innovation
               </p>
               <p className="text-[20px] font-light">
                 <a href="/emma" className="text-white/70 hover:text-white transition-colors bg-gradient-to-r from-purple-500/20 to-blue-500/20 px-4 py-2 rounded-full inline-block">
@@ -276,8 +276,11 @@ export default function Home() {
                 </a>
               </p>
               <p className="text-[12px] text-white/30 mt-2">
-                AI-powered music production technology
+                Revolutionary AI music production platform developed by Folino
               </p>
+              <a href="/emma" className="mt-4 inline-block text-[11px] tracking-[0.2em] px-6 py-3 border border-purple-500/30 text-purple-400 hover:bg-purple-500/10 transition-all duration-300">
+                GET EMMA AI FOR YOUR STUDIO
+              </a>
             </div>
 
             {/* Stats */}
@@ -361,6 +364,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* EMMA AI Showcase Section */}
+      <section className="relative py-32 px-8 bg-gradient-to-b from-purple-900/10 via-black to-black">
+        <div className="relative mx-auto max-w-4xl text-center">
+          <div className="mb-20">
+            <h2 className="text-[11px] tracking-[0.5em] text-purple-400/50 mb-4">MY LATEST CREATION</h2>
+            <div className="w-20 h-[0.5px] bg-purple-400/30 mx-auto" />
+          </div>
+
+          <h3 className="text-[48px] md:text-[56px] font-thin mb-6">
+            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              EMMA AI Studio
+            </span>
+          </h3>
+
+          <p className="text-[18px] text-white/60 mb-8 max-w-2xl mx-auto">
+            After years of producing music and developing technology, I created EMMA -
+            an AI-powered music production platform that's revolutionizing how artists create.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div>
+              <p className="text-[24px] font-thin text-purple-400/80">Sound Design</p>
+              <p className="text-[12px] text-white/40 mt-2">AI-generated presets</p>
+            </div>
+            <div>
+              <p className="text-[24px] font-thin text-purple-400/80">Stem Extraction</p>
+              <p className="text-[12px] text-white/40 mt-2">Isolate any element</p>
+            </div>
+            <div>
+              <p className="text-[24px] font-thin text-purple-400/80">Smart Composition</p>
+              <p className="text-[12px] text-white/40 mt-2">Intelligent arrangements</p>
+            </div>
+          </div>
+
+          <a href="/emma"
+             className="inline-block px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-[14px] tracking-[0.2em] transition-all duration-300">
+            EXPERIENCE EMMA AI
+          </a>
+
+          <p className="text-[11px] text-white/30 mt-6">
+            Now available for producers worldwide
+          </p>
+        </div>
+      </section>
+
       {/* Contact Section - Minimal */}
       <section id="contact" className="relative py-32 px-8">
         <div className="absolute inset-0 bg-black" />
@@ -424,7 +472,7 @@ export default function Home() {
       <footer className="py-12 px-8 border-t border-white/5">
         <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[10px] tracking-[0.2em] text-white/20">
-            © 2024 FOLINO MUSIC · POWERED BY <a href="/emma" className="text-purple-400/40 hover:text-purple-400/60 transition-colors">EMMA AI</a>
+            © 2024 FOLINO MUSIC · DEVELOPER OF <a href="/emma" className="text-purple-400/40 hover:text-purple-400/60 transition-colors">EMMA AI STUDIO</a>
           </p>
           <div className="flex items-center gap-8">
             <a href="#" className="text-[10px] tracking-[0.2em] text-white/20 hover:text-white/40 transition-colors">
