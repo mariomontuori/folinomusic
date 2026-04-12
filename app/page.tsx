@@ -137,7 +137,7 @@ export default function Home() {
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                   animationDelay: `${Math.random() * 10}s`,
-                  animationDuration: `${15 + Math.random() * 20}s`
+                  animationDuration: `${40 + Math.random() * 40}s`
                 }}
               />
             ))}
@@ -691,9 +691,9 @@ export default function Home() {
       <style jsx>{`
         @keyframes float {
           0%, 100% { transform: translateY(0) translateX(0); }
-          25% { transform: translateY(-20px) translateX(10px); }
-          50% { transform: translateY(10px) translateX(-10px); }
-          75% { transform: translateY(-10px) translateX(20px); }
+          25% { transform: translateY(-8px) translateX(4px); }
+          50% { transform: translateY(4px) translateX(-4px); }
+          75% { transform: translateY(-4px) translateX(8px); }
         }
 
         @keyframes scroll-down {
