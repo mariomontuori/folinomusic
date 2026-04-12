@@ -551,7 +551,7 @@ export default function Home() {
             <div className="md:col-span-2">
               <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
                 <iframe
-                  src="https://www.youtube.com/embed/f8guvDStX5M?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/f8guvDStX5M"
                   title="FOLINO - Peace of Mind (Official Audio)"
                   className="absolute inset-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -588,7 +588,7 @@ export default function Home() {
               <div key={index} className="space-y-3">
                 <div className="relative aspect-video bg-gradient-to-br from-purple-900/30 to-blue-900/30 rounded-xl overflow-hidden">
                   <iframe
-                    src={`https://www.youtube.com/embed/${video.videoId}?rel=0&modestbranding=1`}
+                    src={`https://www.youtube.com/embed/${video.videoId}`}
                     title={video.title}
                     className="absolute inset-0 w-full h-full"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
