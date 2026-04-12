@@ -406,12 +406,7 @@ export default function Home() {
                     {/* Release Info */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/90 to-transparent">
                       <h3 className="text-xl font-semibold mb-1">{release.title}</h3>
-                      <div className="flex items-center justify-between">
-                        <p className="text-sm text-gray-300">{release.type} • {release.year}</p>
-                        {release.isEmma && (
-                          <p className="text-xs text-purple-400 font-semibold">✨ EMMA AI</p>
-                        )}
-                      </div>
+                      <p className="text-sm text-gray-300">{release.type} • {release.year}</p>
                     </div>
 
                     {/* Featured Badge */}
