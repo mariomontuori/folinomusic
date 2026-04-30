@@ -591,23 +591,13 @@ export default function Home() {
             GET IN TOUCH
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="mb-16 flex justify-center">
             <a
               href="mailto:management@folinomusic.com"
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+              className="group w-full max-w-xl bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
             >
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                 Management & Bookings
-              </h3>
-              <p className="text-gray-400">management@folinomusic.com</p>
-            </a>
-
-            <a
-              href="mailto:management@folinomusic.com"
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
-            >
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
-                Management
               </h3>
               <p className="text-gray-400">management@folinomusic.com</p>
             </a>
