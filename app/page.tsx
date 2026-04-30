@@ -578,26 +578,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/10">
-              {[
-                { number: 'AI', label: 'Sound Design' },
-                { number: '4', label: 'Stem Types' },
-                { number: 'MIDI', label: 'Chord Export', highlight: true },
-                { number: '24/7', label: 'Available' }
-              ].map((stat, index) => (
-              <div key={index}>
-                <div className={`text-4xl font-bold mb-2 ${
-                  stat.highlight
-                    ? 'bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent'
-                    : 'text-white'
-                }`}>
-                  {stat.number}
-                </div>
-                <div className="text-sm text-gray-500 uppercase tracking-wider">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+          {/* Stats Grid removed */}
         </div>
       </section>
 
@@ -622,13 +603,13 @@ export default function Home() {
             </a>
 
             <a
-              href="mailto:press@folinomusic.com"
+              href="mailto:management@folinomusic.com"
               className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
             >
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                 Press & Media
               </h3>
-              <p className="text-gray-400">press@folinomusic.com</p>
+              <p className="text-gray-400">management@folinomusic.com</p>
             </a>
           </div>
 
