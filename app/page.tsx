@@ -67,7 +67,7 @@ export default function Home() {
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 </a>
                 <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm font-semibold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">
-                  EMMA AI ✨
+                  EMMA AI
                 </a>
                 <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="relative text-sm text-gray-300 hover:text-white transition-colors duration-300 group">
                   SHOP
@@ -403,35 +403,32 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-1 bg-gradient-to-r from-blue-600/20 to-blue-500/20 rounded-full text-sm font-semibold text-blue-400 mb-4">
-              MY INNOVATION
+              EMMA AI
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-400 bg-clip-text text-transparent">
-              EMMA AI STUDIO
+              AI MUSIC TOOLS
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Revolutionary AI-powered music production platform developed by Folino
+              Sound design, stem separation, and chord generation tools built for modern music production.
             </p>
-            <p className="text-sm text-gray-500 mt-2">Now powering 10,000+ artists worldwide</p>
+            <p className="text-sm text-gray-500 mt-2">Built by FOLINO.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               {
-                icon: '🎹',
                 title: 'AI Sound Design',
                 description: 'Generate Serum & Sylenth presets with natural language',
                 gradient: 'from-blue-500 to-blue-600'
               },
               {
-                icon: '🎵',
                 title: 'Stem Separation',
-                description: 'Extract vocals, drums, bass with 99.9% accuracy',
+                description: 'Separate vocals, drums, bass, and other stems from your audio.',
                 gradient: 'from-blue-400 to-blue-600'
               },
               {
-                icon: '✨',
-                title: 'Smart Composition',
-                description: 'AI-powered chord progressions & melody generation',
+                title: 'Chord Generation',
+                description: 'Generate chord progressions and export them as MIDI.',
                 gradient: 'from-blue-600 to-blue-700'
               }
             ].map((feature, index) => (
@@ -439,7 +436,6 @@ export default function Home() {
                 key={index}
                 className="group relative bg-gradient-to-b from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:scale-105"
               >
-                <div className="text-5xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-400 text-sm">{feature.description}</p>
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`} />
@@ -454,12 +450,12 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105 group"
             >
-              <span>TRY EMMA AI FREE</span>
+              <span>OPEN EMMA AI</span>
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
-            <p className="text-sm text-gray-500 mt-4">No credit card required • Free tier available</p>
+            <p className="text-sm text-gray-500 mt-4">Explore EMMA at emma.folinomusic.com</p>
           </div>
         </div>
       </section>
@@ -584,12 +580,12 @@ export default function Home() {
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/10">
-            {[
-              { number: '25', label: 'Followers' },
-              { number: '5', label: 'Releases' },
-              { number: '10K+', label: 'EMMA Users', highlight: true },
-              { number: '∞', label: 'Passion' },
-            ].map((stat, index) => (
+              {[
+                { number: 'AI', label: 'Sound Design' },
+                { number: '4', label: 'Stem Types' },
+                { number: 'MIDI', label: 'Chord Export', highlight: true },
+                { number: '24/7', label: 'Available' }
+              ].map((stat, index) => (
               <div key={index}>
                 <div className={`text-4xl font-bold mb-2 ${
                   stat.highlight
@@ -668,13 +664,12 @@ export default function Home() {
                 FOLINO
               </h3>
               <p className="text-xs text-gray-500 mt-1">Masked DJ • Electronic Music Producer</p>
-              <p className="text-xs text-blue-400">Creator of EMMA AI Studio</p>
+              <p className="text-xs text-blue-400">Creator of EMMA AI</p>
             </div>
 
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-500 hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="text-gray-500 hover:text-white transition-colors">Terms</a>
-              <a href="#" className="text-gray-500 hover:text-white transition-colors">Press Kit</a>
+              <a href="mailto:management@folinomusic.com" className="text-gray-500 hover:text-white transition-colors">Contact</a>
+              <a href="mailto:press@folinomusic.com" className="text-gray-500 hover:text-white transition-colors">Press</a>
               <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Shop</a>
               <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">EMMA AI</a>
             </div>
