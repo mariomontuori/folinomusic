@@ -607,7 +607,7 @@ export default function Home() {
               className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
             >
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
-                Press & Media
+                Management
               </h3>
               <p className="text-gray-400">management@folinomusic.com</p>
             </a>
@@ -650,7 +650,7 @@ export default function Home() {
 
             <div className="flex space-x-6 text-sm">
               <a href="mailto:management@folinomusic.com" className="text-gray-500 hover:text-white transition-colors">Contact</a>
-              <a href="mailto:press@folinomusic.com" className="text-gray-500 hover:text-white transition-colors">Press</a>
+              <a href="mailto:management@folinomusic.com" className="text-gray-500 hover:text-white transition-colors">Management</a>
               <a href="https://shop.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white transition-colors">Shop</a>
               <a href="https://emma.folinomusic.com" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">EMMA AI</a>
             </div>
