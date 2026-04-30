@@ -272,10 +272,10 @@ export default function Home() {
           <div>
             <h3 className="text-2xl font-bold text-center mb-8">Stream Now</h3>
 
-            {/* Featured Track - Peace of Mind */}
+            {/* Featured Release */}
             <div className="mb-8">
               <iframe
-                src="https://open.spotify.com/embed/track/1r2xbK7wjcGaqRYufCvowm?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/album/3mXjXmJQ82Qh606iJFdDss?utm_source=generator&theme=0"
                 width="100%"
                 height="152"
                 frameBorder="0"
@@ -288,9 +288,9 @@ export default function Home() {
 
             {/* Track Grid */}
             <div className="grid md:grid-cols-2 gap-4">
-              {/* Girl Next Door (Remix) */}
+              {/* Featured Single */}
               <iframe
-                src="https://open.spotify.com/embed/track/4wVnvtMEtjYy4tSqiY4tuS?utm_source=generator&theme=0"
+                src="https://open.spotify.com/embed/track/0oxk3e00BwdsjckusGMPi3?utm_source=generator&theme=0"
                 width="100%"
                 height="152"
                 frameBorder="0"
@@ -450,7 +450,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full font-semibold text-white hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all duration-300 hover:scale-105 group"
             >
-              <span>OPEN EMMA AI</span>
+              <span>GET EMMA</span>
               <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
