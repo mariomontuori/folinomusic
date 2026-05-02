@@ -599,7 +599,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text transition-all duration-300">
                 Management & Bookings
               </h3>
-              <p className="text-gray-400">management@folinomusic.com</p>
+              <p className="text-gray-400">mgmt@folinomusic.com</p>
             </a>
           </div>
 
